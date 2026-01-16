@@ -201,6 +201,69 @@
     </a>
   </div>
 </section>
+  <section class="contribution">
+    <form 
+      class="contribution-form"
+      id="contributionForm"
+      method="POST"
+      action="https://api.web3forms.com/submit"
+    >
+      <!-- Web3Forms Required -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+      <input type="hidden" name="subject" value="New Church Contribution" />
+      <input type="hidden" name="from_name" value="Grace Chapel Website" />
+
+      <h2 class="form-title">Church Contribution</h2>
+      <p class="form-text">
+        Support the work of the church by giving joyfully.
+      </p>
+
+      <!-- Full Name -->
+      <div class="form-group">
+        <label>Full Name <span>*</span></label>
+        <input type="text" name="name" id="name" placeholder="Enter your full name" />
+        <small class="error">Name is required</small>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label>Email Address <span class="optional">(optional)</span></label>
+        <input type="email" name="email" placeholder="Enter your email" />
+      </div>
+
+      <!-- Contribution Type -->
+      <div class="form-group">
+        <label>Contribution Type <span>*</span></label>
+        <select name="contribution_type" id="type">
+          <option value="">Select an option</option>
+          <option value="Tithe">Tithe</option>
+          <option value="Offering">Offering</option>
+          <option value="Seed">Seed</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Donation">Donation</option>
+        </select>
+        <small class="error">Please select a contribution type</small>
+      </div>
+
+      <!-- Amount -->
+      <div class="form-group">
+        <label>Amount <span>*</span></label>
+        <input type="number" name="amount" id="amount" placeholder="Enter amount" />
+        <small class="error">Amount is required</small>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label>Message <span class="optional">(optional)</span></label>
+        <textarea name="message" rows="4" placeholder="Prayer request or note"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Submit Contribution</button>
+
+      <p class="success">Thank you! Your contribution has been submitted.</p>
+    </form>
+  </section>
 
 </main>
 <footer class="footer">
