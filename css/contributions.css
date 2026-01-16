@@ -1,0 +1,631 @@
+/* =======================
+   BASE RESET
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 0.1rem solid #e5e7eb;
+}
+
+.navbar__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =======================
+   LOGO
+======================= */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.logo__icon {
+  font-size: 2.4rem;
+  color: #2563eb;
+}
+
+.logo__text span {
+  color: #2563eb;
+}
+
+/* =======================
+   MENU
+======================= */
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #6b7280;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav__link:hover {
+  color: #2563eb;
+}
+
+.nav__link.active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* =======================
+   HAMBURGER
+======================= */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar__toggle span {
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: #111827;
+  border-radius: 0.3rem;
+}
+
+/* =======================
+   WORKERS HERO
+======================= */
+.workers-hero {
+  background: linear-gradient(
+    180deg,
+    #1557d6 0%,
+    #0f3ea8 100%
+  );
+  padding: 10rem 2.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.workers-hero__content {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+/* Icon */
+.workers-hero__icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2.4rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workers-hero__icon svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #ffffff;
+}
+
+/* Title */
+.workers-hero__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+/* Text */
+.workers-hero__text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* =======================
+   LEADERSHIP SECTION
+======================= */
+.leadership {
+  padding: 9rem 2.4rem;
+  background-color: #ffffff;
+}
+
+.leadership__container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.leadership__header {
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto 6rem;
+}
+
+.leadership__header h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+}
+
+.leadership__header p {
+  font-size: 1.6rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Grid */
+.leadership__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2.8rem;
+}
+
+/* Card */
+.leader-card {
+  background-color: #ffffff;
+  padding: 3.6rem 2.4rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  border: 0.1rem solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 2rem 4rem rgba(15, 23, 42, 0.08);
+}
+
+/* Avatar */
+.leader-avatar {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1.6rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Name */
+.leader-card h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+/* Role */
+.leader-role {
+  display: block;
+  font-size: 1.3rem;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+}
+
+/* Description */
+.leader-card p {
+  font-size: 1.4rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* =======================
+   MINISTRIES SECTION
+======================= */
+.ministries {
+  padding: 9rem 2.4rem;
+  background-color: #f8fafc;
+}
+
+.ministries__container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.ministries__header {
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto 6rem;
+}
+
+.ministries__header h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+}
+
+.ministries__header p {
+  font-size: 1.6rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Grid */
+.ministries__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2.4rem;
+}
+
+/* Card */
+.ministry-card {
+  background-color: #ffffff;
+  padding: 3.2rem 2.4rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.ministry-card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 2rem 4rem rgba(15, 23, 42, 0.08);
+}
+
+/* Icon */
+.ministry-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.ministry-icon.blue {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.ministry-icon.orange {
+  background-color: #fb923c;
+  color: #ffffff;
+}
+
+/* Title */
+.ministry-card h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+}
+
+/* Text */
+.ministry-card p {
+  font-size: 1.4rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+/* Meta */
+.ministry-meta {
+  font-size: 1.3rem;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* =======================
+   GET INVOLVED CTA
+======================= */
+.get-involved {
+  padding: 10rem 2.4rem;
+  background-color: #ffffff;
+}
+
+.get-involved__card {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4.8rem 3.2rem;
+  text-align: center;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 1.6rem;
+  background-color: #ffffff;
+}
+
+/* Title */
+.get-involved__card h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+}
+
+/* Text */
+.get-involved__card p {
+  font-size: 1.6rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 60rem;
+  margin: 0 auto 3.2rem;
+}
+
+/* Button */
+.get-involved__btn {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2563eb;
+  background-color: #e0e7ff;
+  border-radius: 999rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.get-involved__btn:hover {
+  background-color: #c7d2fe;
+}
+
+
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #cbd5f5;
+  padding: 7rem 2.4rem 0;
+}
+
+.footer__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Brand */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.footer__logo .logo__icon {
+  font-size: 2.4rem;
+  color: #3b82f6;
+}
+
+.footer__logo span span {
+  color: #3b82f6;
+}
+
+.footer__description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 2.4rem;
+}
+
+/* Socials */
+.footer__socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer__socials a {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer__socials a:hover {
+  background-color: #3b82f6;
+}
+
+/* Columns */
+.footer__column h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+.footer__column ul {
+  list-style: none;
+}
+
+.footer__column li {
+  font-size: 1.4rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.footer__column a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer__column a:hover {
+  color: #ffffff;
+}
+
+/* Bottom */
+.footer__bottom {
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 2.4rem;
+  font-size: 1.3rem;
+  color: #94a3b8;
+}
+
+/* =======================
+   EXTRA SMALL DEVICES
+   (≤ 22.5rem | ~360px)
+======================= */
+@media (max-width: 22.5rem) {
+  html { font-size: 55%; }
+
+  .workers-hero__title { font-size: 3.2rem; }
+  .workers-hero__text { font-size: 1.5rem; }
+
+  .leadership__header h2,
+  .ministries__header h2 {
+    font-size: 2.6rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* =======================
+   SMALL DEVICES
+   (≤ 37.5rem | ~600px)
+======================= */
+@media (max-width: 37.5rem) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .workers-hero {
+    padding: 7rem 2.4rem;
+  }
+
+  .workers-hero__title {
+    font-size: 3.6rem;
+  }
+
+  .leadership,
+  .ministries,
+  .get-involved {
+    padding: 7rem 2.4rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+}
+
+/* =======================
+   TABLETS
+   (≤ 48rem | ~768px)
+======================= */
+@media (max-width: 48rem) {
+  .workers-hero__title {
+    font-size: 4rem;
+  }
+
+  .leadership__grid,
+  .ministries__grid {
+    gap: 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =======================
+   SMALL LAPTOPS
+   (≤ 64rem | ~1024px)
+======================= */
+@media (max-width: 64rem) {
+  .navbar__container {
+    padding: 1.6rem 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* =======================
+   DESKTOP
+   (≥ 90rem | ~1440px)
+======================= */
+@media (min-width: 90rem) {
+  html { font-size: 65%; }
+
+  .workers-hero__title {
+    font-size: 5.2rem;
+  }
+
+  .leadership__header h2,
+  .ministries__header h2 {
+    font-size: 3.8rem;
+  }
+}
+
+/* =======================
+   LARGE DESKTOP / 4K
+   (≥ 144.1rem | ~2300px)
+======================= */
+@media (min-width: 144.1rem) {
+  html { font-size: 68%; }
+
+  .navbar__container,
+  .leadership__container,
+  .ministries__container,
+  .footer__container {
+    max-width: 140rem;
+  }
+
+  .workers-hero__title {
+    font-size: 6rem;
+  }
+}
+

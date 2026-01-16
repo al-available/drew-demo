@@ -1,0 +1,446 @@
+/* =======================
+   BASE RESET
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 0.1rem solid #e5e7eb;
+}
+
+.navbar__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =======================
+   LOGO
+======================= */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.logo__icon {
+  font-size: 2.4rem;
+  color: #2563eb;
+}
+
+.logo__text span {
+  color: #2563eb;
+}
+
+/* =======================
+   MENU
+======================= */
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #6b7280;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav__link:hover {
+  color: #2563eb;
+}
+
+.nav__link.active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* =======================
+   HAMBURGER
+======================= */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar__toggle span {
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: #111827;
+  border-radius: 0.3rem;
+}
+
+/* HERO */
+.attendance-hero {
+  background: linear-gradient(180deg, #1557d6 0%, #0f3ea8 100%);
+  padding: 10rem 2.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.attendance-hero__content {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.attendance-hero__icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2.4rem;
+  border-radius: 1.6rem;
+  background-color: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+}
+
+.attendance-hero__title {
+  font-size: 4.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.attendance-hero__text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.9);
+}
+
+
+.attendance-form {
+  max-width: 48rem;
+  margin: 9rem auto;
+  padding: 4.8rem 3.2rem;
+  background: #ffffff;
+  border-radius: 1.6rem;
+  border: 0.1rem solid #e2e8f0;
+  display: grid;
+  gap: 2.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+label span {
+  color: #ef4444;
+}
+
+.optional {
+  color: #64748b;
+  font-weight: 400;
+}
+
+input,
+select {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #cbd5f5;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.form-check label {
+  font-size: 1.3rem;
+}
+
+.attendance-btn {
+  margin-top: 1.6rem;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 999rem;
+  border: none;
+  background: linear-gradient(180deg, #1557d6, #0f3ea8);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.attendance-btn:hover {
+  opacity: 0.9;
+}
+
+.error {
+  font-size: 1.2rem;
+  color: #ef4444;
+  display: none;
+}
+
+.form-success {
+  display: none;
+  font-size: 1.4rem;
+  color: #16a34a;
+  text-align: center;
+}
+
+
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #cbd5f5;
+  padding: 7rem 2.4rem 0;
+}
+
+.footer__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Brand */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.footer__logo .logo__icon {
+  font-size: 2.4rem;
+  color: #3b82f6;
+}
+
+.footer__logo span span {
+  color: #3b82f6;
+}
+
+.footer__description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 2.4rem;
+}
+
+/* Socials */
+.footer__socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer__socials a {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer__socials a:hover {
+  background-color: #3b82f6;
+}
+
+/* Columns */
+.footer__column h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+.footer__column ul {
+  list-style: none;
+}
+
+.footer__column li {
+  font-size: 1.4rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.footer__column a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer__column a:hover {
+  color: #ffffff;
+}
+
+/* Bottom */
+.footer__bottom {
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 2.4rem;
+  font-size: 1.3rem;
+  color: #94a3b8;
+}
+
+
+/* =======================
+   RESPONSIVE MEDIA QUERIES
+======================= */
+
+/* ---------- Tablets & Small Laptops (≤ 1024px / 64rem) ---------- */
+@media (max-width: 64rem) {
+  .navbar__container {
+    padding: 1.6rem;
+  }
+
+  .attendance-hero {
+    padding: 8rem 2.4rem;
+  }
+
+  .attendance-hero__title {
+    font-size: 3.8rem;
+  }
+
+  .attendance-form {
+    margin: 7rem auto;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+}
+
+/* ---------- Tablets & Large Phones (≤ 768px / 48rem) ---------- */
+@media (max-width: 48rem) {
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem;
+    border-bottom: 0.1rem solid #e5e7eb;
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .attendance-hero {
+    padding: 7rem 2.4rem;
+  }
+
+  .attendance-hero__title {
+    font-size: 3.2rem;
+  }
+
+  .attendance-hero__text {
+    font-size: 1.6rem;
+  }
+
+  .attendance-form {
+    margin: 6rem 2.4rem;
+    padding: 3.6rem 2.4rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Small Phones (≤ 480px / 30rem) ---------- */
+@media (max-width: 30rem) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .attendance-hero__icon {
+    width: 5.2rem;
+    height: 5.2rem;
+    font-size: 2rem;
+  }
+
+  .attendance-hero__title {
+    font-size: 2.8rem;
+  }
+
+  .attendance-btn {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  .footer {
+    padding-top: 5rem;
+  }
+
+  .footer__description {
+    font-size: 1.3rem;
+  }
+}
+
+/* ---------- Large Screens (≥ 1440px / 90rem) ---------- */
+@media (min-width: 90rem) {
+  .navbar__container,
+  .footer__container {
+    max-width: 140rem;
+  }
+
+  .attendance-hero__title {
+    font-size: 5rem;
+  }
+}
